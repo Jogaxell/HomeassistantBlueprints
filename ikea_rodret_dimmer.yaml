@@ -32,8 +32,8 @@ blueprint:
       selector:
         device:
           filter:
-            - integration: mqtt
-              manufacturer: IKEA
+            - integration: Zigbee2MQTT
+              manufacturer: IKEA of Sweden
               model: RODRET Dimmer
             - integration: zha
               manufacturer: IKEA of Sweden

@@ -32,12 +32,24 @@ blueprint:
       selector:
         device:
           filter:
-            - integration: Zigbee2MQTT
+            # Zigbee2MQTT filters
+            - integration: mqtt
+              manufacturer: IKEA
+              model: RODRET wireless dimmer
+            - integration: mqtt
+              manufacturer: IKEA
+              model: RODRET wireless dimmer/power switch
+            - integration: mqtt
+              manufacturer: IKEA
+              model: RODRET wireless dimmer/power switch (E2201)
+            # ZHA filters
+            - integration: zha
               manufacturer: IKEA of Sweden
               model: RODRET Dimmer
             - integration: zha
               manufacturer: IKEA of Sweden
-              model: RODRET Dimmer
+              model: RODRET wireless dimmer
+            # deCONZ filter
             - integration: deconz
               manufacturer: IKEA of Sweden
               model: RODRET Dimmer
